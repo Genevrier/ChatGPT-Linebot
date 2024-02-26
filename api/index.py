@@ -39,11 +39,11 @@ def handle_message(event):
     if event.message.type != "text":
         return
 
-    if event.message.text == "說話":
+    if event.message.text == "Hello":
         working_status = True
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="我可以說話囉，歡迎來跟我互動 ^_^ "))
+            TextSendMessage(text="Please input your message"))
         return
 
     if event.message.text == "閉嘴":
