@@ -43,7 +43,7 @@ def handle_message(event):
         working_status = True
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="Please input your message"))
+            TextSendMessage(text="j'suis pas ton pote, reste tranquille pd"))
         return
 
     if event.message.text == "閉嘴":
